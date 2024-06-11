@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1065212340597",
+    "project_id": "time-planner-91a69",
+    "storage_bucket": "time-planner-91a69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065212340597:android:9b849c3432267e3943cb3c",
+        "android_client_info": {
+          "package_name": "com.naltech.timeplanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3X6orMSvS23JIWaoq7euGxD5xDGY1-XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
