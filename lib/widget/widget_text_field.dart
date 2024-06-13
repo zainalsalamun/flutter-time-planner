@@ -30,21 +30,35 @@ class CustomTextField extends StatelessWidget {
       keyboardType: textInputType,
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        hintText: hint,
-        hintStyle: getDefaultTextStyle.copyWith(
-          color: Get.isDarkMode
-              ? darkPrimaryColor.withOpacity(.6)
-              : blackColor.withOpacity(.6),
-        ),
-        border: OutlineInputBorder(
-          borderSide: Divider.createBorderSide(
-            context,
-            color: greyColor,
-            width: .5,
+          hintText: hint,
+          hintStyle: getDefaultTextStyle.copyWith(
+            color: Get.isDarkMode
+                ? darkPrimaryColor.withOpacity(.6)
+                : blackColor.withOpacity(.6),
           ),
-          borderRadius: BorderRadius.circular(7),
-        ),
-      ),
+          border: OutlineInputBorder(
+            borderSide: Divider.createBorderSide(
+              context,
+              color: greyColor,
+              width: .5,
+            ),
+            borderRadius: BorderRadius.circular(7),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: Divider.createBorderSide(
+              context,
+              color: Get.theme.colorScheme.primary,
+              width: 2,
+            ),
+            borderRadius: BorderRadius.circular(7),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide:
+                Divider.createBorderSide(context, color: greyColor, width: .5),
+          ),
+          fillColor: greyColor.withOpacity(.1),
+          filled: true,
+          contentPadding: const EdgeInsets.all(10)),
     );
   }
 }
