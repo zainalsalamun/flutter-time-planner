@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:time_planner/constants/constants.dart';
 import 'package:time_planner/routes/routes.dart';
 import 'package:time_planner/services/authentication_function.dart';
-import '../data/model/user_model.dart';
+import '../model/user_model.dart';
 import '../widget/snackbar.dart';
 
 class AuthenticationModuleController {
